@@ -16,6 +16,5 @@ class CalcTests(SimpleTestCase):
         """
         test numbers truely subtract
         """
-        result = subtract(3,5)
+        result = subtract(3, 5)
         self.assertEqual(result, 2)
-        
