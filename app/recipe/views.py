@@ -1,6 +1,7 @@
 """
 Views for the recipe APIs
 """
+from recipe import serializers
 from drf_spectacular.utils import (
     extend_schema_view,
     extend_schema,
@@ -14,7 +15,6 @@ from rest_framework import (
     mixins,
     status,
 )
-from recipe.serializers import serializers
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from core.models import (
